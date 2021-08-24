@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar a:hover {
+  color: #fff;
+}
