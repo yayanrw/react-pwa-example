@@ -13,21 +13,21 @@ function App() {
         <Navbar bg="dark" variant="dark">
           <Container>
             <Navbar.Brand>
-              <Link>Navbar</Link>
+              <Link to="/">Navbar</Link>
             </Navbar.Brand>
 
             <Nav className="me-auto">
-              <Nav.Link>
-                <Link to="/">Home</Link>
-              </Nav.Link>
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
 
-              <Nav.Link>
-                <Link to="/about">About</Link>
-              </Nav.Link>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
 
-              <Nav.Link>
-                <Link to="/users">Users</Link>
-              </Nav.Link>
+              <Link className="nav-link" to="/users">
+                Users
+              </Link>
             </Nav>
           </Container>
         </Navbar>
