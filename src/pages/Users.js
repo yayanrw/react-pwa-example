@@ -41,7 +41,7 @@ export default function Users() {
         </thead>
         <tbody>
           {data.map((item) => (
-            <tr>
+            <tr key={item.id}>
               <td>{item.id}</td>
               <td>{item.name}</td>
               <td>{item.email}</td>
