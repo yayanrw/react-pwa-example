@@ -5,8 +5,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./pages/About";
 import Users from "./pages/Users";
 import Home from "./pages/Home";
+import firebase from "./firebase";
 
 function App() {
+  React.useEffect(() => {
+    const msg = firebase.messaging();
+    console.warn(msg.getToken());
+  });
+
   return (
     <div className="App">
       <Router>
