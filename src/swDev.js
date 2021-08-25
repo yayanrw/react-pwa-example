@@ -1,4 +1,4 @@
-const webpush = require("web-push");
+// const webpush = require("web-push");
 
 export default function swDef() {
   function urlBase64ToUint8Array(base64String) {
@@ -17,8 +17,10 @@ export default function swDef() {
   }
 
   function determineAppServerKey() {
-    const vapidKeys = webpush.generateVAPIDKeys();
-    return urlBase64ToUint8Array(vapidKeys.publicKey);
+    // const vapidKeys = webpush.generateVAPIDKeys();
+    const vapidKeys =
+      "BAqZeGbxPdsWEUtHs2V-BRoj9viP3Pfu1N6WWo31wnuZW6mnWnQjKP_OkVuH-eMedKiKuy_rIafNI4fshOaH44s";
+    return urlBase64ToUint8Array(vapidKeys);
   }
 
   let swUrl = `${process.env.PUBLIC_URL}/sw.js`;
